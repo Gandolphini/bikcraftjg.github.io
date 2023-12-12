@@ -1,0 +1,168 @@
+/*inicial*/
+body{
+    display: grid;
+    justify-items: center;
+    margin: 0px;
+    background-color: #f7f7f7;
+    margin-top: 30px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+p, h1, a{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+li{
+    list-style-type:none;
+}
+
+
+.botao-menu{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid transparent;
+   display: inline-block;
+}
+.botao-menu:hover{
+    border: 2px solid red; 
+}
+header{
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+}
+
+.grid{
+    margin-top: 60px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    border-radius: 5px;
+    gap: 30px
+}
+
+/*produtos*/
+
+.produtos{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.produtos h1{
+   
+    margin-top: 10px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.preco-buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco-buttom span{
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.produto-botao{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.produto-botao:hover{
+    background-color: red;
+}
+
+/*footer*/
+
+footer{
+    margin-top: 60px;
+    min-height: 100px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    align-items: center;  
+    display: grid;
+    padding-top: 20px;
+}
+.footer-links a{
+    display: inline-block;
+    padding: 10px;
+}
+
+@media (max-width:768px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+
+    .ul{
+        justify-content: center;
+    }
+}
+
+@media (max-width:580px){
+    ul{
+        justify-content: center;
+    }
+}
+
+@media (max-width:480px){
+    .preco-buttom{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .preco-buttom span{
+        font-size: 1.2rem;
+    }
+
+    .preco-buttom a{
+        font-size: 1.2rem;
+    }
+
+    .produtos p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .produtos h1{
+        text-align: center;
+    }
+}
+
+@media (max-width:572px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:1000px){
+    .preco-buttom{
+        gap: 20px;
+        text-align: center;
+    }
+}

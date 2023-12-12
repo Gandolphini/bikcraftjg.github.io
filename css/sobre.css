@@ -1,0 +1,30 @@
+.grid{
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.grid div p{
+    margin-top: 20px;
+   
+}
+
+div a{
+    text-decoration: none;
+    color: red;
+}
+
+
+@media (max-width:550px){
+    div h2,p{
+        text-align: center;
+    }
+
+    div span{
+        display: none;
+    }
+}
