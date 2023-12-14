@@ -45,9 +45,9 @@ header{
     margin-top: 60px;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(auto-fit, 300px) ;
     border-radius: 5px;
-    gap: 30px
+    gap: 30px;
 }
 
 /*produtos*/
