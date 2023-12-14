@@ -130,7 +130,7 @@ footer{
 
 @media (max-width: 1000px){
     .grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(200px, 1fr);
     }
     .introducao{
         justify-items: center;
