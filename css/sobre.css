@@ -19,7 +19,7 @@ div a{
 }
 
 
-@media (max-width:550px){
+@media (max-width:800px){
     div h2,p{
         text-align: center;
     }
@@ -28,3 +28,4 @@ div a{
         display: none;
     }
 }
+
