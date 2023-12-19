@@ -34,3 +34,8 @@ div a{
     margin-top: 50px;
 }
 
+div a:hover{
+    background-color: red;
+    transition: 0.9s;
+}
+
