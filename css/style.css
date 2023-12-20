@@ -5,6 +5,7 @@ body{
     background-color: #f7f7f7;
     margin-top: 30px;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 ul{
     display: flex;
@@ -127,6 +128,9 @@ footer{
     background-image: url(/img/onda.svg);
 }
 
+#btn-mobile{
+    display: none;
+}
 @media (max-width: 1000px){
     .grid{
         grid-template-columns: minmax(200px, auto);
@@ -153,7 +157,64 @@ footer{
     }
 
 }
+@media (max-width:600px){
+    #btn-mobile{
+        display: block;
+    }
 
+    ul{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    z-index: 1000;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .botao-menu{
+        background-color: transparent;
+        display: block;
+    }
+    #nav{
+        margin-right: 20px;
+        
+    }
+
+    .botao-menu{
+        padding: 25px;
+    }
+
+    header img{
+        width: 180px;
+        margin-left: 20px;
+    }
+
+    button{
+        display: block;
+    }
+
+
+    #nav.active ul{
+        display: flex;
+    }
+
+
+   
+
+    
+
+}
 @media (max-width:400px){
     .introducao h1{
         text-align: center;
