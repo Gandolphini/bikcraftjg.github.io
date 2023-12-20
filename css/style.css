@@ -26,7 +26,7 @@ li{
     color: black;
     border-radius: 5px;
     border: 2px solid transparent;
-   display: inline-block;
+    display: inline-block;
 }
 .botao-menu:hover{
     border: 2px solid red; 
@@ -37,7 +37,7 @@ header{
     gap: 60px;
 }
 .grid{
-    margin-top: 60px;
+    margin-top: 30px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: minmax(200px,auto) minmax(200px,auto);
@@ -175,7 +175,6 @@ footer{
     background-color: #f7f7f7;
 }
 
-
     header{
         display: flex;
         justify-content: space-between;
@@ -184,7 +183,11 @@ footer{
     }
     .botao-menu{
         background-color: transparent;
-        display: block;
+        display: inline-block;
+    }
+
+    .botao-menu:hover{
+        border: none;
     }
     #nav{
         margin-right: 20px;
@@ -192,7 +195,7 @@ footer{
     }
 
     .botao-menu{
-        padding: 25px;
+        padding: 23px;
     }
 
     header img{
@@ -209,10 +212,53 @@ footer{
         display: flex;
     }
 
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background:none;
+        cursor: pointer;
+        font-family: 'Fira Sans';
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+    }
 
-   
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid;
+        display: block;
+        position: relative;
+        padding: 0px;
+        margin-left: 5px;
+        align-items: center;
+        max-width: 100%;
+    }
 
+    #hamburguer::after, #hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
     
+    #nav.active #hamburguer::before{
+        transform:  rotate(-135deg) ;
+        top: 7px;
+        
+    }
+    
+    #nav.active #hamburguer::after{
+        transform:  rotate(135deg) ;
+    }
+   
 
 }
 @media (max-width:400px){
