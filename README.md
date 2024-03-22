@@ -1,5 +1,7 @@
 # Bikcraft
-Pequeno projeto web
+Pequeno projeto web.
+
+##### Link para visualização do projeto: https://gandolphini.github.io/bikcraftjg.github.io/
 
 ## Linguages utilizadas:
 
@@ -10,10 +12,11 @@ Pequeno projeto web
 
 
 ## Funcionalidade Desktop
-https://github.com/Gandolphini/bikcraftjg.github.io/assets/103223523/5672972a-9bec-4197-a712-a744972e795f
+![desktop](https://github.com/Gandolphini/bikcraftjg.github.io/assets/103223523/bf618551-ac1e-42b4-8119-377aebc37413)
 
 ## Funcionalidade Mobile 
-https://github.com/Gandolphini/bikcraftjg.github.io/assets/103223523/ce367166-5bff-40fb-9eef-1f58b726bc45
+![mobile](https://github.com/Gandolphini/bikcraftjg.github.io/assets/103223523/3cce076e-4582-44d8-8ed6-4524b7395695)
+
 
 
 
